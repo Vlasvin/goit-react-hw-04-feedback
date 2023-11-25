@@ -5,9 +5,9 @@ import { Section } from 'components/Section/Section';
 import { Layout } from 'components/Layout/Layout';
 
 export function App() {
-  const { good, setGood } = useState('0');
-  const { neutral, setNeutral } = useState('0');
-  const { bad, setBad } = useState('0');
+  const [good, setGood] = useState(0);
+  const [neutral, setNeutral] = useState(0);
+  const [bad, setBad] = useState(0);
 
   const leaveFeedback = option => {
     switch (option) {
